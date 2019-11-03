@@ -1,0 +1,4 @@
+Это список возникших вопросов
+1. Чем аннотация @GetMapping в AdvertiserController отличается от @RequestMapping
+2. Для аннотации @RequestMapping метода updateAdvertiser если указать method = RequestMethod.PUT или RequestMethod.POST сервер перестаёт отвечать на запросы, в логах пишется ошибка
+Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
