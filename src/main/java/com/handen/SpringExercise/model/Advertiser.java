@@ -13,6 +13,13 @@ public class Advertiser {
         this.creditLimit = creditLimit;
     }
 
+    public Advertiser(String name, String contactName, int creditLimit) {
+        this.id = -1;
+        this.name = name;
+        this.contactName = contactName;
+        this.creditLimit = creditLimit;
+    }
+
     public int getId() {
         return id;
     }
