@@ -22,10 +22,6 @@ class AdvertiserController {
     public void postAdvertiser(@RequestParam(value = "name", defaultValue = "") String name,
                                @RequestParam(value = "contactName", defaultValue = "") String contactName,
                                @RequestParam(value = "creditLimit", defaultValue = "0") Integer creditLimit) {
-        System.out.println("POST");
-        System.out.println(name);
-        System.out.println(contactName);
-        System.out.println(creditLimit);
         mAdvertiserMapper.insertAdvertiser(new Advertiser(name, contactName, creditLimit));
     }
 
@@ -35,18 +31,11 @@ class AdvertiserController {
                                  @RequestParam(value = "contactName", defaultValue = "", required = false) String contactName,
                                  @RequestParam(value = "creditLimit", required = false) Integer creditLimit) {
         //TODO проверка аргументов на null
-        System.out.println("PUT");
-        System.out.println(id);
-        System.out.println(name);
-        System.out.println(contactName);
-        System.out.println(creditLimit);
         mAdvertiserMapper.updateAdvertiser(new Advertiser(id, name, contactName, creditLimit));
     }
 
     @RequestMapping(value = "/delete")
     public void deleteAdvertiser(@RequestParam(value = "id", defaultValue = "-1") Integer id) {
-        System.out.println("DELETE");
-        System.out.println(id);
         mAdvertiserMapper.deleteAdvertiser(id);
     }
 
