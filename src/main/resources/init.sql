@@ -1,4 +1,4 @@
-CREATE TABLE advertisers (
+CREATE TABLE IF NOT EXISTS advertisers (
     id int(11) NOT NULL AUTO_INCREMENT,
     name VARCHAR(45) NOT NULL,
     contact_name VARCHAR(45) NOT NULL,

@@ -20,6 +20,7 @@ dependencies {
 	runtimeOnly 'com.h2database:h2'
 	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
 	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+    testCompile("org.springframework.boot:spring-boot-starter-test")
 	compile group: 'io.swagger', name: 'swagger-annotations', version: '1.5.22'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
