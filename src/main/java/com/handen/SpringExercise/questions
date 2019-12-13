@@ -1,5 +1,8 @@
-Это список возникших вопросов
-1. Чем аннотация @GetMapping в AdvertiserController отличается от @RequestMapping
-2. Для аннотации @RequestMapping метода updateAdvertiser если указать method = RequestMethod.PUT или RequestMethod.POST сервер перестаёт отвечать на запросы, в логах пишется ошибка
-Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-3. Для чего нужен @Component
+1. Я создал TestRequest файл в com.handen.springexercise и написал туда запросы, это правильный подход для тестирования api?
+2. Что будет, если в Controller есть два метода помеченных @PostMapping с одинаковыми аргументами?
+3. @RequestMapping(value = "/{id}/**") Зачем нужны две *?
+4. Не работает POST, PUT
+5. Посоветуйте пожалуйста что почитать про структуру HTTP запросов и ответов
+6. Правильно ли я переделал checkPerformTransaction? Т.е. переменная пути для id, и аргумент количество кредитов, с которым мы сравниваем? Нужно проверить типа достаточно ли у advertiser средств для транзакции
+
+Большое спасибо

@@ -1,0 +1,35 @@
+GET http://localhost:8080/api/advertisers
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/advertisers/1
+Accept: application/json
+
+###
+
+POST http://localhost:8080/api/advertisers
+Content-Type: application/json
+
+{"id": 4, "name": "Fourth", "contactName": "Klim", "creditLimit": 999}
+###
+
+PUT http://localhost:8080/api/advertisers/2
+Content-Type: application/json
+
+{"id": 4, "name": "Updated", "contactName": "John Musk", "creditLimit": 1000}
+###
+
+DELETE http://localhost:8080/api/advertisers/1
+Accept: application/json
+
+###
+GET http://localhost:8080/api/advertisers/1/checkPerformTransaction?credits=100
+Accept: application/json
+
+###
+
+GET http://localhost:8080/api/advertisers/swagger-ui.html
+Accept: text/html
+
+###

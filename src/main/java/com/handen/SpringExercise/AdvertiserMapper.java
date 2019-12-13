@@ -17,7 +17,7 @@ public interface AdvertiserMapper {
 
     @Update("UPDATE advertisers " +
             "SET name = #{name}, contact_name = #{contactName}, credit_limit = #{credit_limit} WHERE id = #{id}")
-    void updateAdvertiser(Advertiser advertiser);
+    void updateAdvertiser(int id, Advertiser advertiser);
 
     @Delete("DELETE FROM advertisers WHERE id = #{id}")
     void deleteAdvertiser(Integer id);
